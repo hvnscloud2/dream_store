@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos | Dream Store</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+
+        <div class="buscador">
+            <form action="">
+                <input type="text" id="busqueda" name="busqueda" placeholder="Buscar" required>
+                <div class="lupa">
+                    <label for="busqueda"><img src="img/lupa.png" alt=""></label>
+                </div>
+            </form>
+        </div>
+
+        <nav>
+            <ul class="navegacion" id="links">
+                <li><a href="productos.html">Productos</a></li>
+                |
+                <li><a href="descuentos.html">Descuentos</a></li>
+                |
+            </ul>
+
+            <ul class="navegacion">
+                <li><a href="carrito.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+                    </a></li>
+                <li><a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                    </a></li>
+                <li><a href="acerca.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                        </svg>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="encabezado-descuentos">
+        <div class="portada-descuentos">
+            <h1>¡Echa un vistazo</h1>
+            <h3>a nuestras ofertas!</h3>
+        </div>
+    </section>
+
+    <div class="contenedor-principal" id="descuentos">
+        <div class="col">
+            <a href="#">
+                <div class="card">
+                    <img src="img/descuento1.png" alt="Top Manga Corta" style="width: 100%;">
+                    <div class="contenedor-producto">
+                        <label class="informacion-producto">Top Manga Corta</label>
+                        <br>
+                        <p class="precio-producto"><del>6$</del> 3$</p>
+                        <button data-nombre="Top Manga Corta" data-precio="3">Añadir al carrito</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="#">
+                <div class="card">
+                    <img src="img/descuento2.png" alt="Top Manga Larga" style="width: 100%;">
+                    <div class="contenedor-producto">
+                        <label class="informacion-producto">Top Manga Larga</label>
+                        <br>
+                        <p class="precio-producto"><del>8$</del> 5$</p>
+                        <button data-nombre="Top Manga Larga" data-precio="5">Añadir al carrito</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="#">
+                <div class="card">
+                    <img src="img/descuento3.png" alt="Corset Coquette Blanco" style="width: 100%;">
+                    <div class="contenedor-producto">
+                        <label class="informacion-producto">Corset Coquette Blanco</label>
+                        <br>
+                        <p class="precio-producto"><del>13$</del> 9$</p>
+                        <button data-nombre="Corset Coquette Blanco" data-precio="9">Añadir al carrito</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="#">
+                <div class="card">
+                    <img src="img/descuento4.png" alt="Blusa Semitransparente" style="width: 100%;">
+                    <div class="contenedor-producto">
+                        <label class="informacion-producto">Blusa Semitransparente</label>
+                        <br>
+                        <p class="precio-producto"><del>8$</del> 5$</p>
+                        <button data-nombre="Blusa Semitransparente" data-precio="5">Añadir al carrito</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="#">
+                <div class="card">
+                    <img src="img/descuento5.png" alt="Falda De Cuadros Plisada" style="width: 100%;">
+                    <div class="contenedor-producto">
+                        <label class="informacion-producto">Falda De Cuadros Plisada</label>
+                        <br>
+                        <p class="precio-producto"><del>10$</del> 6$</p>
+                        <button data-nombre="Falda De Cuadros Plisada" data-precio="6">Añadir al carrito</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="#">
+                <div class="card">
+                    <img src="img/descuento6.png" alt="Top Sin Mangas" style="width: 100%;">
+                    <div class="contenedor-producto">
+                        <label class="informacion-producto">Top Sin Mangas</label>
+                        <br>
+                        <p class="precio-producto"><del>6$</del> 4$</p>
+                        <button data-nombre="Top Sin Mangas" data-precio="4">Añadir al carrito</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="#">
+                <div class="card">
+                    <img src="img/descuento7.png" alt="Vestido Vino" style="width: 100%;">
+                    <div class="contenedor-producto">
+                        <label class="informacion-producto">Vestido Vino</label>
+                        <br>
+                        <p class="precio-producto"><del>17$</del> 11$</p>
+                        <button data-nombre="Vestido Vino" data-precio="11">Añadir al carrito</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="#">
+                <div class="card">
+                    <img src="img/descuento8.png" alt="Short Plisado" style="width: 100%;">
+                    <div class="contenedor-producto">
+                        <label class="informacion-producto">Short Plisado</label>
+                        <br>
+                        <p class="precio-producto"><del>8$</del> 5$</p>
+                        <button data-nombre="Short Plisado" data-precio="5">Añadir al carrito</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="#">
+                <div class="card">
+                    <img src="img/descuento9.png" alt="Short Gris" style="width: 100%;">
+                    <div class="contenedor-producto">
+                        <label class="informacion-producto">Short Gris</label>
+                        <br>
+                        <p class="precio-producto"><del>6$</del> 4$</p>
+                        <button data-nombre="Short Gris" data-precio="4">Añadir al carrito</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="mensaje">Producto añadido al carrito</div>
+
+    <footer class="footer">
+        <div class="contenedor-footer">
+            <div class="informacion-footer">
+                <p>UBÍCANOS<br><br> Avenida Guajira, Zona Industrial Norte, Maracaibo Zulia.</p>
+            </div>
+
+            <div class="informacion-footer">
+                <p>CONTACTOS <br><br> +584127511998. <br><br> dreamstore@gmail.com.</p>
+            </div>
+
+            <div class="informacion-footer">
+                <p>SÍGUENOS</p>
+                <div class="redes">
+                    <a href="https://www.facebook.com" class="facebook"><img src="img/facebook.png"></a>
+                    <a href="https://www.instagram.com/" class="Instagram"><img src="img/instagram.png"></a>
+                    <a href="https://twitter.com" class="Twitter"><img src="img/twitter.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <small>&copy; 2024 Dream Store</small>
+        </div>
+    </footer>
+
+    <script>
+        let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+        function añadirAlCarrito(nombre, precio, imagen) {
+            const productoExistente = carrito.find(producto => producto.nombre === nombre);
+
+            if (productoExistente) {
+                productoExistente.cantidad += 1;
+            } else {
+                const producto = { nombre, precio, cantidad: 1, imagen };
+                carrito.push(producto);
+            }
+
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            mostrarMensaje();
+        }
+
+        function mostrarMensaje() {
+            const mensaje = document.getElementById('mensaje');
+
+            mensaje.style.visibility = 'visible';
+            mensaje.style.opacity = '1';
+
+            setTimeout(() => {
+                mensaje.style.opacity = '0';
+
+                setTimeout(() => {
+                    mensaje.style.visibility = 'hidden';
+                }, 500);
+            }, 2000);
+        }
+
+        function cargarCarrito() {
+            const carritoGuardado = JSON.parse(localStorage.getItem('carrito')) || [];
+            carrito = carritoGuardado;
+        }
+
+        window.onload = () => {
+            cargarCarrito();
+            document.querySelectorAll('.contenedor-producto button').forEach((boton) => {
+                boton.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const nombre = event.target.getAttribute('data-nombre');
+                    const precio = parseFloat(event.target.getAttribute('data-precio'));
+                    const imagen = event.target.closest('.card').querySelector('img').src;
+
+                    añadirAlCarrito(nombre, precio, imagen);
+                });
+            });
+        };
+    </script>
+
+</body>
+
+</html>

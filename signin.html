@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regístrate | Dream Store</title>
+  <link rel="icon" href="img/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt=""></a>
+    </div>
+
+    <div class="buscador">
+      <form action="">
+        <input type="text" id="busqueda" name="busqueda" placeholder="Buscar" required>
+        <div class="lupa">
+          <label for="busqueda"><img src="img/lupa.png" alt=""></label>
+        </div>
+      </form>
+    </div>
+
+    <nav>
+      <ul class="navegacion" id="links">
+        <li><a href="productos.html">Productos</a></li>
+        |
+        <li><a href="descuentos.html">Descuentos</a></li>
+        |
+      </ul>
+
+      <ul class="navegacion">
+        <li><a href="carrito.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+            </svg>
+          </a></li>
+        <li><a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+          </a></li>
+        <li><a href="acerca.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+            </svg>
+          </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contenedor-registro">
+    <h1>Regístrate</h1>
+    <div class="titulo-registro">Nombre:</div>
+    <input type="email" placeholder="Ingrese su nombre">
+
+    <div class="titulo-registro">Apellido:</div>
+    <input type="email" placeholder="Ingrese su apellido">
+
+    <div class="titulo-registro">Correo Electrónico:</div>
+    <input type="email" placeholder="Ingrese su correo electrónico">
+
+    <div class="titulo-registro">Contraseña:</div>
+    <input type="password" placeholder="Ingrese su contraseña">
+
+    <div class="casilla">
+      <input type="checkbox" id="politica"><label for="politica">He leído y acepto la Política de
+        Privacidad y Cookies</label>
+    </div>
+
+    <button class="boton">CREAR CUENTA</button>
+  </div>
+
+  <footer class="footer">
+    <div class="contenedor-footer">
+      <div class="informacion-footer">
+        <p>UBÍCANOS<br><br> Avenida Guajira, Zona Industrial Norte, Maracaibo Zulia.</p>
+      </div>
+
+      <div class="informacion-footer">
+        <p>CONTACTOS <br><br> +584127511998. <br><br> dreamstore@gmail.com.</p>
+      </div>
+
+      <div class="informacion-footer">
+        <p>SÍGUENOS</p>
+        <div class="redes">
+          <a href="https://www.facebook.com" class="facebook"><img src="img/facebook.png"></a>
+          <a href="https://www.instagram.com/" class="Instagram"><img src="img/instagram.png"></a>
+          <a href="https://twitter.com" class="Twitter"><img src="img/twitter.png"></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <small>&copy; 2024 Dream Store</small>
+    </div>
+  </footer>
+</body>
+
+</html>

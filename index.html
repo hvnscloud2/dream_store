@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Store</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+
+        <div class="buscador">
+            <form action="">
+                <input type="text" id="busqueda" name="busqueda" placeholder="Buscar" required>
+                <div class="lupa">
+                    <label for="busqueda"><img src="img/lupa.png" alt=""></label>
+                </div>
+            </form>
+        </div>
+
+        <nav>
+            <ul class="navegacion" id="links">
+                <li><a href="productos.html">Productos</a></li>
+                |
+                <li><a href="descuentos.html">Descuentos</a></li>
+                |
+            </ul>
+
+            <ul class="navegacion">
+                <li><a href="carrito.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+                    </a></li>
+                <li><a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg>
+                    </a></li>
+                <li><a href="acerca.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+                        </svg>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="encabezado-home">
+        <div class="portada-home">
+            <h1>VISTE A TU ESTILO</h1>
+            <h3>Marca tu día</h3>
+        </div>
+    </section>
+
+    <section class="encabezado-home">
+        <div class="portada-outifts">
+            <h1>OUTFITS PERSONALIZADOS</h1>
+            <h3>Para cambiar tu estilo</h3>
+        </div>
+    </section>
+
+    <div class="contenedor-principal">
+        <div class="col">
+            <a href="#">
+                <div class="card">
+                    <img src="img/outfit1.png" alt="Casual Girl Outfit" style="width: 100%;">
+                    <div class="contenedor-producto">
+                        <label class="informacion-producto">Casual Girl Outfit</label>
+                        <br>
+                        <p class="precio-producto">$20</p>
+                        <button data-nombre="Casual Girl Outfit" data-precio="20">Añadir al carrito</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="#">
+                <div class="card">
+                    <img src="img/outfit2.png" alt="Y2K Girl Outfit" style="width: 100%;">
+                    <div class="contenedor-producto">
+                        <label class="informacion-producto">Y2K Girl Outfit</label>
+                        <br>
+                        <p class="precio-producto">$18</p>
+                        <button data-nombre="Y2K Girl Outfit" data-precio="18">Añadir al carrito</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="#">
+                <div class="card">
+                    <img src="img/outfit3.png" alt="Black Stone Outfit" style="width: 100%;">
+                    <div class="contenedor-producto">
+                        <label class="informacion-producto">Black Stone Outfit</label>
+                        <br>
+                        <p class="precio-producto">$21</p>
+                        <button data-nombre="Black Stone Outfit" data-precio="21">Añadir al carrito</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="#">
+                <div class="card">
+                    <img src="img/outfit4.png" alt="Ice Baddie Outfit" style="width: 100%;">
+                    <div class="contenedor-producto">
+                        <label class="informacion-producto">Ice Baddie Outfit</label>
+                        <br>
+                        <p class="precio-producto">$21</p>
+                        <button data-nombre="Ice Baddie Outfit" data-precio="21">Añadir al carrito</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="#">
+                <div class="card">
+                    <img src="img/outfit5.png" alt="White Feminine Outfit" style="width: 100%;">
+                    <div class="contenedor-producto">
+                        <label class="informacion-producto">White Feminine Outfit</label>
+                        <br>
+                        <p class="precio-producto">$30</p>
+                        <button data-nombre="White Feminine Outfit" data-precio="30">Añadir al carrito</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a href="#">
+                <div class="card">
+                    <img src="img/outfit6.png" alt="Teachers Pet Outfit" style="width: 100%;">
+                    <div class="contenedor-producto">
+                        <label class="informacion-producto">Teachers Pet Outfit</label>
+                        <br>
+                        <p class="precio-producto">$22</p>
+                        <button data-nombre="Teachers Pet Outfit" data-precio="22">Añadir al carrito</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="mensaje">Producto añadido al carrito</div>
+
+    <section class="encabezado-home">
+        <div class="portada-home3">
+        </div>
+    </section>
+
+    <section class="encabezado-home">
+        <div class="portada-home4">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="contenedor-footer">
+            <div class="informacion-footer">
+                <p>UBÍCANOS<br><br> Avenida Guajira, Zona Industrial Norte, Maracaibo Zulia.</p>
+            </div>
+
+            <div class="informacion-footer">
+                <p>CONTACTOS <br><br> +584127511998. <br><br> dreamstore@gmail.com.</p>
+            </div>
+
+            <div class="informacion-footer">
+                <p>SÍGUENOS</p>
+                <div class="redes">
+                    <a href="https://www.facebook.com" class="facebook"><img src="img/facebook.png"></a>
+                    <a href="https://www.instagram.com/" class="Instagram"><img src="img/instagram.png"></a>
+                    <a href="https://twitter.com" class="Twitter"><img src="img/twitter.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <small>&copy; 2024 Dream Store</small>
+        </div>
+    </footer>
+
+    <script>
+        let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+        function añadirAlCarrito(nombre, precio, imagen) {
+            const productoExistente = carrito.find(producto => producto.nombre === nombre);
+
+            if (productoExistente) {
+                productoExistente.cantidad += 1;
+            } else {
+                const producto = { nombre, precio, cantidad: 1, imagen };
+                carrito.push(producto);
+            }
+
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            mostrarMensaje();
+        }
+
+        function mostrarMensaje() {
+            const mensaje = document.getElementById('mensaje');
+
+            mensaje.style.visibility = 'visible';
+            mensaje.style.opacity = '1';
+
+            setTimeout(() => {
+                mensaje.style.opacity = '0';
+
+                setTimeout(() => {
+                    mensaje.style.visibility = 'hidden';
+                }, 500);
+            }, 2000);
+        }
+
+        function cargarCarrito() {
+            const carritoGuardado = JSON.parse(localStorage.getItem('carrito')) || [];
+            carrito = carritoGuardado;
+        }
+
+        window.onload = () => {
+            cargarCarrito();
+            document.querySelectorAll('.contenedor-producto button').forEach((boton) => {
+                boton.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const nombre = event.target.getAttribute('data-nombre');
+                    const precio = parseFloat(event.target.getAttribute('data-precio'));
+                    const imagen = event.target.closest('.card').querySelector('img').src;
+
+                    añadirAlCarrito(nombre, precio, imagen);
+                });
+            });
+        };
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Carrito | Dream Store</title>
+  <link rel="icon" href="img/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt=""></a>
+    </div>
+
+    <div class="buscador">
+      <form action="">
+        <input type="text" id="busqueda" name="busqueda" placeholder="Buscar" required>
+        <div class="lupa">
+          <label for="busqueda"><img src="img/lupa.png" alt=""></label>
+        </div>
+      </form>
+    </div>
+
+    <nav>
+      <ul class="navegacion" id="links">
+        <li><a href="productos.html">Productos</a></li>
+        |
+        <li><a href="descuentos.html">Descuentos</a></li>
+        |
+      </ul>
+
+      <ul class="navegacion">
+        <li><a href="carrito.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+            </svg>
+          </a></li>
+        <li><a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+          </a></li>
+        <li><a href="acerca.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+            </svg>
+          </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contenedor-carrito">
+    <h1 style="text-align: center;">Carrito</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Producto</th>
+          <th scope="col"></th>
+          <th scope="col">Precio</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col" class="total-header">Total</th>
+        </tr>
+      </thead>
+      <tbody id="carrito-body">
+      </tbody>
+    </table>
+
+    <div class="seccion-total">
+      <h4 style="font-weight: 700;">Total:</h4>
+      <h4 class="total">$0.00</h4>
+    </div>
+
+    <a href="login.html"><button class="boton-comprar">Comprar</button></a>
+  </div>
+
+  <footer class="footer">
+    <div class="contenedor-footer">
+      <div class="informacion-footer">
+        <p>UBÍCANOS<br><br> Avenida Guajira, Zona Industrial Norte, Maracaibo Zulia.</p>
+      </div>
+
+      <div class="informacion-footer">
+        <p>CONTACTOS <br><br> +584127511998. <br><br> dreamstore@gmail.com.</p>
+      </div>
+
+      <div class="informacion-footer">
+        <p>SÍGUENOS</p>
+        <div class="redes">
+          <a href="https://www.facebook.com" class="facebook"><img src="img/facebook.png"></a>
+          <a href="https://www.instagram.com/" class="Instagram"><img src="img/instagram.png"></a>
+          <a href="https://twitter.com" class="Twitter"><img src="img/twitter.png"></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <small>&copy; 2024 Dream Store</small>
+    </div>
+  </footer>
+
+  <script>
+    function cargarCarrito() {
+      const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+      const carritoBody = document.getElementById('carrito-body');
+      const totalElement = document.querySelector('.total');
+      carritoBody.innerHTML = '';
+      let total = 0;
+
+      if (carrito.length === 0) {
+        carritoBody.innerHTML = '<tr><td colspan="5" style="text-align:center; padding: 50px;">El carrito está vacío.</td></tr>';
+        totalElement.textContent = '$0.00';
+      } else {
+        carrito.forEach((producto) => {
+          const subtotal = producto.precio * producto.cantidad;
+          total += subtotal;
+
+          const row = document.createElement('tr');
+          row.innerHTML = `
+                <td><img src="${producto.imagen}" alt="${producto.nombre}" style="width: 50px; height: auto;"></td>
+                <td>${producto.nombre}</td>
+                <td>$${producto.precio.toFixed(2)}</td>
+                <td>${producto.cantidad}</td>
+                <td>$${subtotal.toFixed(2)}</td>
+            `;
+          carritoBody.appendChild(row);
+        });
+
+        totalElement.textContent = `$${total.toFixed(2)}`;
+      }
+    }
+
+    window.onload = cargarCarrito;
+  </script>
+
+</body>
+
+</html>
